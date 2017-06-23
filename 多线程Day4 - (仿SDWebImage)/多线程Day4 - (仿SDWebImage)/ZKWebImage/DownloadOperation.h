@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface DownloadOperation : NSOperation
+
+//接收外界传入图片的地址
+@property(nonatomic,copy)NSString *URLString;
+
+//接收外界传入的回调的代码块
+@property(nonatomic,copy)void(^imageBlock)(UIImage *);
 
 @end
