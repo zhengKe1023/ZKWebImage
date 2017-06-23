@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3CF6D21EFD598B00E6DFCC /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */; };
 		1A80632A1EFD4D910059FC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063291EFD4D910059FC03 /* main.m */; };
 		1A80632D1EFD4D910059FC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632C1EFD4D910059FC03 /* AppDelegate.m */; };
 		1A8063301EFD4D910059FC03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632F1EFD4D910059FC03 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A3CF6D01EFD598B00E6DFCC /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 		1A8063251EFD4D910059FC03 /* 多线程Day4 - (仿SDWebImage).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程Day4 - (仿SDWebImage).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8063291EFD4D910059FC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A80632B1EFD4D910059FC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A3CF6CF1EFD594B00E6DFCC /* ZKWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				1A3CF6D01EFD598B00E6DFCC /* DownloadOperation.h */,
+				1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */,
+			);
+			path = ZKWebImage;
+			sourceTree = "<group>";
+		};
 		1A80631C1EFD4D910059FC03 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		1A8063271EFD4D910059FC03 /* 多线程Day4 - (仿SDWebImage) */ = {
 			isa = PBXGroup;
 			children = (
+				1A3CF6CF1EFD594B00E6DFCC /* ZKWebImage */,
 				1A80632B1EFD4D910059FC03 /* AppDelegate.h */,
 				1A80632C1EFD4D910059FC03 /* AppDelegate.m */,
 				1A80632E1EFD4D910059FC03 /* ViewController.h */,
@@ -153,6 +166,7 @@
 				1A8063301EFD4D910059FC03 /* ViewController.m in Sources */,
 				1A80632D1EFD4D910059FC03 /* AppDelegate.m in Sources */,
 				1A80632A1EFD4D910059FC03 /* main.m in Sources */,
+				1A3CF6D21EFD598B00E6DFCC /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +323,7 @@
 				1A80633E1EFD4D910059FC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
