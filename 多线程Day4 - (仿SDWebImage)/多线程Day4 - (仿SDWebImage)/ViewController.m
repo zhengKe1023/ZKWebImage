@@ -21,18 +21,16 @@
     //准备队列
     NSOperationQueue *queue = [NSOperationQueue new];
     
-    //创建自定义操作,只能调用系统的实例化方法new
-    DownloadOperation *op = [DownloadOperation new];
+    //图片地址
+    NSString *urlString = @"http://pic.58pic.com/58pic/13/61/00/61a58PICtPr_1024.jpg";
     
-    //向操作中添加网络地址
-    op.URLString = @"http://pic.58pic.com/58pic/13/61/00/61a58PICtPr_1024.jpg";
-    
-    //用于回调图片对象的代码块
-    [op setImageBlock:^(UIImage *image){
+    //创建自定义操作
+    DownloadOperation *op = [DownloadOperation downLoadOperationWithURLString:urlString finish:^(UIImage *image) {
         
-        NSLog(@"%@ %@",image,[NSThread currentThread]);
-        
+         NSLog(@"%@ %@",image,[NSThread currentThread]);
     }];
+    
+
     
     
     //把自定义操作添加到队列
