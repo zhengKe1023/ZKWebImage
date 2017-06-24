@@ -21,13 +21,10 @@
     //准备队列
     NSOperationQueue *queue = [NSOperationQueue new];
     
-    //图片地址
-    NSString *urlString = @"http://pic.58pic.com/58pic/13/61/00/61a58PICtPr_1024.jpg";
+    NSString *URLString = @"http://pic.58pic.com/58pic/13/61/00/61a58PICtPr_1024.jpg";
     
-    //创建自定义操作
-    DownloadOperation *op = [DownloadOperation downLoadOperationWithURLString:urlString finish:^(UIImage *image) {
-        
-         NSLog(@"%@ %@",image,[NSThread currentThread]);
+    DownloadOperation *op = [DownloadOperation downLoadOperationWithURLString:URLString finish:^(UIImage *image) {
+        NSLog(@"%@ %@",image,[NSThread currentThread]);
     }];
     
 
