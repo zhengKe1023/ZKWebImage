@@ -62,20 +62,16 @@
     //在进入下载前,判断连续传入的地址是否一样,如果不一样,就把前一个下载操作取消
     if (![app.icon isEqualToString:_lastURLString] && _lastURLString != nil) {
         
-        //取出上一个图片的下载操作,调用cancel方法取消
-        DownloadOperation *lastOp = [self.opCachePool objectForKey:_lastURLString];
+        //单例接管取消操作
+        [[WebImageManager sharedManager] cancelLastOperation:_lastURLString];
         
-        [lastOp cancel];
-        
-        //取消掉的操作,直接从缓存池中移除
-        [self.opCachePool removeObjectForKey:_lastURLString];
     }
     
     
     //记录上次图片地址
     _lastURLString = app.icon;
     
-    //单例接管下载操作:取消操作失效了!
+    //单例接管下载操作
     [[WebImageManager sharedManager] downloadImageWithURLString:app.icon completion:^(UIImage *image) {
         
         self.iconImageView.image = image;

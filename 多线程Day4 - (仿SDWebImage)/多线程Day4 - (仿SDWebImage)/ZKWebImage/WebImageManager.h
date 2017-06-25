@@ -17,4 +17,6 @@
 //单例下载的主方法 
 - (void)downloadImageWithURLString:(NSString *)URLString completion:(void(^)(UIImage *image))completionBlock;
 
+- (void)cancelLastOperation:(NSString *)lastURLString ;
+
 @end
