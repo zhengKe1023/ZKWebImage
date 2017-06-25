@@ -60,11 +60,21 @@
     //模拟网络延迟
     [NSThread sleepForTimeInterval:1.0];
     
+    //在执行操作过程中拦截到的操作是否被取消
+    if(self.isCancelled == YES){
+        
+        NSLog(@"取消 = %@",self.URLString);
+        
+        return;
+    }
+    
     //图片下载结束,xuyao使用代码块把图片回调给外界
     if(self.finishedBlock != nil){
         
         //刷新UI,回到主线程:在哪个线程调用的,那么就在哪个线程执行;
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            
+            NSLog(@"完成 = %@",self.URLString);
             self.finishedBlock(image);
         }];
         
