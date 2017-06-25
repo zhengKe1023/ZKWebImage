@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "YYModel.h"
 #import "appModel.h"
+#import "WebImageManager.h"  
 
 @interface ViewController ()
 
@@ -20,11 +21,12 @@
 //队列
 @property(nonatomic,strong)NSOperationQueue *queue;
 
+//操作缓存池
+@property(nonatomic,strong)NSMutableDictionary *opCachePool;
+
 //图片控件
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
-//操作缓存池
-@property(nonatomic,strong)NSMutableDictionary *opCachePool;
 
 //记录上一个图片的地址
 @property(nonatomic,copy)NSString *lastURLString;
@@ -73,22 +75,13 @@
     //记录上次图片地址
     _lastURLString = app.icon;
     
-    //获取随机图片的地址,交给DownloadOperation去下载
-    //创建自定义操作
-    DownloadOperation *op = [DownloadOperation downLoadOperationWithURLString:app.icon finish:^(UIImage *image) {
-
-        self.iconImageView.image = image;
+    //单例接管下载操作:取消操作失效了!
+    [[WebImageManager sharedManager] downloadImageWithURLString:app.icon completion:^(UIImage *image) {
         
-        //图片下载结束后,移除对应的下载操作
-        [self.opCachePool removeObjectForKey:app.icon];
+        self.iconImageView.image = image;
     }];
     
-    //添加操作到缓存池
-    [self.opCachePool setObject:op forKey:app.icon];
-    
-    
-    //把自定义操作添加到队列
-    [self.queue addOperation:op];
+   
     
 }
 

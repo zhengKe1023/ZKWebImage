@@ -33,6 +33,7 @@
 		1A3CF7481EFFD77E00E6DFCC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CF72C1EFFD77E00E6DFCC /* UIView+WebCacheOperation.m */; };
 		1A3CF7491EFFD77E00E6DFCC /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CF72F1EFFD77E00E6DFCC /* NSObject+YYModel.m */; };
 		1A3CF74A1EFFD77E00E6DFCC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CF7311EFFD77E00E6DFCC /* YYClassInfo.m */; };
+		1A3CF74D1EFFEED400E6DFCC /* WebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CF74C1EFFEED400E6DFCC /* WebImageManager.m */; };
 		1A80632A1EFD4D910059FC03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063291EFD4D910059FC03 /* main.m */; };
 		1A80632D1EFD4D910059FC03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632C1EFD4D910059FC03 /* AppDelegate.m */; };
 		1A8063301EFD4D910059FC03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632F1EFD4D910059FC03 /* ViewController.m */; };
@@ -97,6 +98,8 @@
 		1A3CF7301EFFD77E00E6DFCC /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		1A3CF7311EFFD77E00E6DFCC /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		1A3CF7321EFFD77E00E6DFCC /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		1A3CF74B1EFFEED400E6DFCC /* WebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageManager.h; sourceTree = "<group>"; };
+		1A3CF74C1EFFEED400E6DFCC /* WebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageManager.m; sourceTree = "<group>"; };
 		1A8063251EFD4D910059FC03 /* 多线程Day4 - (仿SDWebImage).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程Day4 - (仿SDWebImage).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8063291EFD4D910059FC03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A80632B1EFD4D910059FC03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 			children = (
 				1A3CF6D01EFD598B00E6DFCC /* DownloadOperation.h */,
 				1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */,
+				1A3CF74B1EFFEED400E6DFCC /* WebImageManager.h */,
+				1A3CF74C1EFFEED400E6DFCC /* WebImageManager.m */,
 			);
 			path = ZKWebImage;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				1A3CF73A1EFFD77E00E6DFCC /* NSData+ImageContentType.m in Sources */,
 				1A80632A1EFD4D910059FC03 /* main.m in Sources */,
 				1A3CF7381EFFD77E00E6DFCC /* AFURLSessionManager.m in Sources */,
+				1A3CF74D1EFFEED400E6DFCC /* WebImageManager.m in Sources */,
 				1A3CF74A1EFFD77E00E6DFCC /* YYClassInfo.m in Sources */,
 				1A3CF7421EFFD77E00E6DFCC /* UIButton+WebCache.m in Sources */,
 				1A3CF73F1EFFD77E00E6DFCC /* SDWebImageDownloaderOperation.m in Sources */,

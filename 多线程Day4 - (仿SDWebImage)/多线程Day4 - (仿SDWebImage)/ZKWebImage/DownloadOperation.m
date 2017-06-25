@@ -60,7 +60,7 @@
     //模拟网络延迟
     [NSThread sleepForTimeInterval:1.0];
     
-    //在执行操作过程中拦截到的操作是否被取消
+    //在执行操作过程中拦截
     if(self.isCancelled == YES){
         
         NSLog(@"取消 = %@",self.URLString);
@@ -75,6 +75,8 @@
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             
             NSLog(@"完成 = %@",self.URLString);
+            
+            //把拿到的代码块回调给单例
             self.finishedBlock(image);
         }];
         
