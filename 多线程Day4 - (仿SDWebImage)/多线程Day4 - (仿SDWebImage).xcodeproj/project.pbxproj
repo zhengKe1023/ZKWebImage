@@ -41,6 +41,7 @@
 		1A8063351EFD4D910059FC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8063341EFD4D910059FC03 /* Assets.xcassets */; };
 		1A8063381EFD4D910059FC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8063361EFD4D910059FC03 /* LaunchScreen.storyboard */; };
 		1AFAAEA21F014D41008AACEB /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAAEA11F014D41008AACEB /* NSString+path.m */; };
+		1AFAAEA51F015497008AACEB /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAAEA41F015497008AACEB /* UIImageView+WebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,8 @@
 		1A8063391EFD4D910059FC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFAAEA01F014D41008AACEB /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
 		1AFAAEA11F014D41008AACEB /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
+		1AFAAEA31F015497008AACEB /* UIImageView+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebImage.h"; sourceTree = "<group>"; };
+		1AFAAEA41F015497008AACEB /* UIImageView+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */,
 				1A3CF74B1EFFEED400E6DFCC /* WebImageManager.h */,
 				1A3CF74C1EFFEED400E6DFCC /* WebImageManager.m */,
+				1AFAAEA31F015497008AACEB /* UIImageView+WebImage.h */,
+				1AFAAEA41F015497008AACEB /* UIImageView+WebImage.m */,
 			);
 			path = ZKWebImage;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				1A3CF73E1EFFD77E00E6DFCC /* SDWebImageDownloader.m in Sources */,
 				1A3CF7461EFFD77E00E6DFCC /* UIImageView+HighlightedWebCache.m in Sources */,
 				1A3CF73D1EFFD77E00E6DFCC /* SDWebImageDecoder.m in Sources */,
+				1AFAAEA51F015497008AACEB /* UIImageView+WebImage.m in Sources */,
 				1A3CF7451EFFD77E00E6DFCC /* UIImage+WebP.m in Sources */,
 				1A3CF7491EFFD77E00E6DFCC /* NSObject+YYModel.m in Sources */,
 				1A3CF7401EFFD77E00E6DFCC /* SDWebImageManager.m in Sources */,
