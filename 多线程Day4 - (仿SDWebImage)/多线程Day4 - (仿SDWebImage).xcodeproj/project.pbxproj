@@ -40,6 +40,7 @@
 		1A8063331EFD4D910059FC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8063311EFD4D910059FC03 /* Main.storyboard */; };
 		1A8063351EFD4D910059FC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8063341EFD4D910059FC03 /* Assets.xcassets */; };
 		1A8063381EFD4D910059FC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8063361EFD4D910059FC03 /* LaunchScreen.storyboard */; };
+		1AFAAEA21F014D41008AACEB /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAAEA11F014D41008AACEB /* NSString+path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		1A8063341EFD4D910059FC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A8063371EFD4D910059FC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A8063391EFD4D910059FC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFAAEA01F014D41008AACEB /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		1AFAAEA11F014D41008AACEB /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 		1A3CF6CF1EFD594B00E6DFCC /* ZKWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				1AFAAEA01F014D41008AACEB /* NSString+path.h */,
+				1AFAAEA11F014D41008AACEB /* NSString+path.m */,
 				1A3CF6D01EFD598B00E6DFCC /* DownloadOperation.h */,
 				1A3CF6D11EFD598B00E6DFCC /* DownloadOperation.m */,
 				1A3CF74B1EFFEED400E6DFCC /* WebImageManager.h */,
@@ -338,6 +343,7 @@
 				1A80632D1EFD4D910059FC03 /* AppDelegate.m in Sources */,
 				1A3CF73A1EFFD77E00E6DFCC /* NSData+ImageContentType.m in Sources */,
 				1A80632A1EFD4D910059FC03 /* main.m in Sources */,
+				1AFAAEA21F014D41008AACEB /* NSString+path.m in Sources */,
 				1A3CF7381EFFD77E00E6DFCC /* AFURLSessionManager.m in Sources */,
 				1A3CF74D1EFFEED400E6DFCC /* WebImageManager.m in Sources */,
 				1A3CF74A1EFFD77E00E6DFCC /* YYClassInfo.m in Sources */,
